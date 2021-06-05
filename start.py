@@ -1,14 +1,9 @@
-from github import Github
-import os
+import requests
 from pprint import pprint
 
-token = os.getenv('GITHUB_TOKEN','$$$$')
+username = "TapanManu"
 
-g = Github(token)
-
-repo = g.get_repo("TapanManu/PyGit")
-try:
-    branch = repo.get_branch("main")
-    print(branch)
-except:
-    print("error fetching branch")
+# sample starter file
+url = f"https://api.github.com/users/{username}"
+user_data = requests.get(url).json()
+pprint(user_data)
