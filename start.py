@@ -2,7 +2,7 @@ from github import Github
 import os
 from pprint import pprint
 
-token = os.getenv('GITHUB_TOKEN',"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")
+token = os.getenv('GITHUB_TOKEN','$$$$')
 
 g = Github(token)
 
