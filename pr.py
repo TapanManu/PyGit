@@ -18,7 +18,7 @@ def create_pull_request(repo,title,body):
         print("error creating pr")
 
 def main():
-    title = "First PR using PyGithub"
+    title = "Test PR using PyGithub"
     body = "SUMMARY: First PR"
     create_pull_request(repo, title, body)
 
