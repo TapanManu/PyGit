@@ -2,7 +2,7 @@ import base64
 from github import Github
 from pprint import pprint
 
-g = Github("PASTE YOUR GITHUB ACCESS TOKEN HERE")
+g = Github("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")
 # Token cannot be made public :)
 
 reponame = "TapanManu/PyGit"
@@ -37,6 +37,5 @@ def close_issue(reponame,i):
     except:
         print("repository not found for closing")
 
-x = open_issue(reponame, "Test issue", "Test issue for github app")
-close_issue(reponame, x)
+x = open_issue(reponame, "Test run issue", "Test issue for github app")
 
