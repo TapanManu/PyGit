@@ -2,7 +2,7 @@ import base64
 from github import Github
 from pprint import pprint
 
-g = Github("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")
+g = Github("GITHUB_ACCESS_TOKEN")
 # Token cannot be made public :)
 
 reponame = "TapanManu/PyGit"
